@@ -2194,7 +2194,7 @@ body:has(.sizzle-experience) {
 
 .site-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
   max-width: 1440px;
   margin: 0 auto 1rem;
@@ -2202,9 +2202,17 @@ body:has(.sizzle-experience) {
   border-radius: 1.5rem;
 }
 
-.site-footer p {
-  margin: 0;
-  color: var(--muted);
+.site-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.15rem;
+  width: 100%;
+}
+
+.site-footer .site-nav-link {
+  text-align: center;
 }
 
 @media (max-width: 1080px) {
@@ -2322,7 +2330,11 @@ body:has(.sizzle-experience) {
   }
 
   .site-footer {
-    flex-direction: column;
+    padding-inline: 1.15rem;
+  }
+
+  .site-footer-nav {
+    gap: 0.95rem 1.15rem;
   }
 
   .phase-two-slide {
