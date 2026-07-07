@@ -50,9 +50,9 @@ export default function PhaseThreeFinalPage() {
         </div>
         <div className="phase-copy phase-description-panel phase-three-final-panel">
           <p>
-            The two remaining performers battle it out on stage in front of
-            thousands. Only one will be chosen to stay on the tour by Sabrina
-            and her team.
+            The two remaining performers battle it out on the arena stage in front of
+            thousands. Only one will claim the ultimate prize
+            and become Sabrina&apos;s official opening act.
           </p>
         </div>
 

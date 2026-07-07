@@ -8,9 +8,8 @@ export default function LoglinePage() {
         <div className="logline-copy">
           <p className="logline-eyebrow">LOG LINE</p>
           <p className="logline-statement">
-            TEN RISING POP STARS TRAVEL THE WORLD, WHERE EVERY CITY SHAPES
-            THE MUSIC, AND ONLY ONE WILL EARN THEIR PLACE ON STAGE WITH SABRINA
-            CARPENTER.
+            TEN COMPETING POP STARS TRAVEL THE WORLD, WHERE EVERY CITY SHAPES
+            THE MUSIC, AND ONLY ONE WINS THEIR PLACE ON STAGE WITH SABRINA.
           </p>
         </div>
       </section>

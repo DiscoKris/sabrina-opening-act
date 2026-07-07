@@ -59,8 +59,7 @@ export default function WinnerPage() {
 
           <div className="winner-reveal-copy winner-page-copy">
             <p className="winner-reveal-summary winner-page-summary">
-              The winner of the competition stays on the rest of the tour with
-              Sabrina and signs a lucrative record contract.
+              CONGRATULATIONS!!
             </p>
             {!hasStoredWinner ? (
               <p className="winner-page-fallback">
@@ -68,16 +67,18 @@ export default function WinnerPage() {
                 winner to personalize this reveal.
               </p>
             ) : null}
-            <Link
-              href={hasStoredWinner ? "/why-sabrina" : "/phase-three/final"}
-              className="next-slide-button next-slide-button-inline winner-reveal-button"
-            >
-              <span>{hasStoredWinner ? "CONTINUE" : "RETURN TO FINAL"}</span>
-              <span className="next-slide-button-arrow" aria-hidden="true">
-                →
-              </span>
-            </Link>
           </div>
+        </div>
+        <div className="slide-action-wrap">
+          <Link
+            href={hasStoredWinner ? "/why-sabrina" : "/phase-three/final"}
+            className="next-slide-button next-slide-button-inline winner-reveal-button"
+          >
+            <span>{hasStoredWinner ? "CONTINUE" : "RETURN TO FINAL"}</span>
+            <span className="next-slide-button-arrow" aria-hidden="true">
+              →
+            </span>
+          </Link>
         </div>
       </section>
     </SlideBackground>

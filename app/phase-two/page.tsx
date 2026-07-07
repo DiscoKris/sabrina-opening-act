@@ -89,24 +89,20 @@ export default function PhaseTwoPage() {
           <div className="phase-two-copy-panel">
             <div className="phase-copy phase-description-panel">
               <p>
-                In Phase Two, the tour, the ten artists travel across
+                Phase Two, the 10 pop stars travel across
                 international cities, where each stop shapes the performance.
                 Inspired by the culture, music, and energy of each location,
-                the artists are pushed to take on new genres, styles, and
-                challenges.
+                the artists must adapt to new genres, styles, and challenges.
               </p>
               <p>
-                In every city, they battle to win the night while defending
-                their place in the competition against a rising local
-                challenger. The winner earns the opportunity to open Sabrina
-                Carpenter&apos;s stadium show the following evening and secures one
-                of six coveted places in the finals.
+                In every city, they compete to win the night, earning a place
+                in the finals and exclusive access to Sabrina&apos;s world.
+                The rewards escalate throughout the tour and bring them
+                ever closer to becoming Sabrina&apos;s official opening act.
               </p>
               <p>
-                But for the lowest-scoring artist, their place on the tour is
-                suddenly at risk. As the competition moves from city to city,
-                the pressure intensifies. Only six artists will make the
-                finals, the rest will be eliminated from the tour.
+                For the lowest-scoring artist, however, the journey could end
+                there. As a local artist tries to win their spot from them in a sing off. The competition intensifies, as only six artists will advance to the next round.
               </p>
             </div>
           </div>

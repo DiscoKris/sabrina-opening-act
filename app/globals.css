@@ -620,6 +620,17 @@ img {
   justify-self: center;
 }
 
+.slide-action-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0.9rem 0 0.35rem;
+}
+
+.slide-action-wrap > .next-slide-button-inline {
+  margin: 0;
+}
+
 .next-slide-button-arrow {
   display: inline-block;
   font-size: 1.2em;
@@ -1385,6 +1396,19 @@ body:has(.sizzle-experience) {
   text-align: center;
 }
 
+.madrid-challenger-subtitle {
+  margin: -0.2rem 0 0.15rem;
+  color: rgba(255, 255, 255, 0.78);
+  font-family: var(--body-font);
+  font-size: clamp(0.85rem, 1.2vw, 0.96rem);
+  line-height: 1.45;
+  text-align: center;
+  text-wrap: balance;
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.08),
+    0 0 14px rgba(255, 47, 164, 0.12);
+}
+
 .madrid-finalist-image-wrap,
 .madrid-contestant-image-wrap,
 .madrid-challenger-image-wrap,
@@ -1443,6 +1467,21 @@ body:has(.sizzle-experience) {
   background:
     radial-gradient(circle at 50% 30%, rgba(255, 255, 255, 0.1), transparent 46%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+}
+
+.madrid-image-slot-upcoming {
+  display: grid;
+  place-items: center;
+}
+
+.madrid-upcoming-reward-mark {
+  color: rgba(255, 47, 164, 0.96);
+  font-family: var(--heading-font);
+  font-size: clamp(3.8rem, 6vw, 5.2rem);
+  line-height: 1;
+  text-shadow:
+    0 0 16px rgba(255, 47, 164, 0.42),
+    0 0 28px rgba(255, 47, 164, 0.26);
 }
 
 .madrid-finalist-name,
@@ -1572,11 +1611,45 @@ body:has(.sizzle-experience) {
 .madrid-result-copy {
   margin: 0;
   color: white;
+  font-family: var(--body-font);
+  font-size: clamp(1.08rem, 1.38vw, 1.3rem);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0;
+  text-align: left;
+  text-wrap: pretty;
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.08),
+    0 0 14px rgba(255, 47, 164, 0.1);
+}
+
+.madrid-result-copy-wrap {
+  width: min(100%, 980px);
+  display: grid;
+  align-content: center;
+  gap: 0.9rem;
+  justify-self: center;
+  padding: 1.15rem 1.65rem;
+  border: 1px solid rgba(255, 130, 223, 0.26);
+  border-radius: 1.35rem;
+  background: rgba(9, 8, 12, 0.46);
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+    0 0 22px rgba(255, 47, 164, 0.14);
+}
+
+.madrid-result-prizes-heading {
+  margin: 0.35rem 0 0.2rem;
+  color: white;
   font-family: var(--heading-font);
-  font-size: 1.1rem;
-  letter-spacing: 0.08em;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  letter-spacing: 0.14em;
   text-align: center;
   text-transform: uppercase;
+  text-shadow:
+    0 0 12px rgba(255, 255, 255, 0.1),
+    0 0 18px rgba(255, 47, 164, 0.2);
 }
 
 .madrid-result-slide {
@@ -1702,7 +1775,7 @@ body:has(.sizzle-experience) {
 }
 
 .madrid-result-page-button {
-  margin: 0.45rem auto 0;
+  margin: 0;
 }
 
 .phase-three-slide {
@@ -1824,7 +1897,7 @@ body:has(.sizzle-experience) {
 }
 
 .phase-three-button {
-  margin: 0.35rem auto 0;
+  margin: 0;
 }
 
 .phase-three-final-slide {

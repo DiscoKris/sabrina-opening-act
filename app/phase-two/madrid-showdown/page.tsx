@@ -13,12 +13,29 @@ import {
 
 type StoredWinner = (typeof topTenContestants)[number];
 
+const episodeTwoReward = "VIP\u00A0CONCERT\u00A0VIEWING";
+
 const remainingFinalistSlots = [
-  "Episode 3 Winner",
-  "Episode 4 Winner",
-  "Episode 5 Winner",
-  "Episode 6 Winner",
-  "Episode 7 Winner",
+  {
+    label: "Episode 3 Winner",
+    reward: "SOUNDCHECK\u00A0ACCESS",
+  },
+  {
+    label: "Episode 4 Winner",
+    reward: "CREATIVE\u00A0SESSION",
+  },
+  {
+    label: "Episode 5 Winner",
+    reward: "TOUR\u00A0LIFE",
+  },
+  {
+    label: "Episode 6 Winner",
+    reward: "FAN\u00A0EVENT",
+  },
+  {
+    label: "Episode 7 Winner",
+    reward: "BACKING\u00A0VOCALIST",
+  },
 ];
 
 export default function MadridShowdownPage() {
@@ -88,19 +105,22 @@ export default function MadridShowdownPage() {
               )}
             </div>
             <p className="madrid-finalist-name">
-              {mounted && winner ? "OPENS IN MADRID" : "\u00A0"}
+              {mounted && winner ? episodeTwoReward : "\u00A0"}
             </p>
           </article>
 
-          {remainingFinalistSlots.map((slotLabel) => (
+          {remainingFinalistSlots.map((slot) => (
             <article
-              key={slotLabel}
+              key={slot.label}
               className="madrid-finalist-card madrid-finalist-card-empty"
             >
-              <p className="madrid-finalist-label">{slotLabel}</p>
+              <p className="madrid-finalist-label">{slot.label}</p>
               <div className="madrid-finalist-image-wrap">
-                <div className="madrid-image-slot" aria-hidden="true" />
+                <div className="madrid-image-slot madrid-image-slot-upcoming" aria-hidden="true">
+                  <span className="madrid-upcoming-reward-mark">?</span>
+                </div>
               </div>
+              <p className="madrid-finalist-name">{slot.reward}</p>
             </article>
           ))}
         </div>
@@ -142,6 +162,9 @@ export default function MadridShowdownPage() {
 
           <aside className="madrid-challenger-panel">
             <p className="madrid-challenger-label">LOCAL CHALLENGER</p>
+            <p className="madrid-challenger-subtitle">
+              Handpicked from hundreds of local artists by Sabrina's team.
+            </p>
             <div className="madrid-challenger-image-wrap">
               {mounted ? (
                 <Image

@@ -13,26 +13,28 @@ import {
 
 type StoredContestant = (typeof topTenContestants)[number];
 
+const episodeTwoReward = "VIP\u00A0CONCERT\u00A0VIEWING";
+
 const remainingFinalistSlots = [
   {
     label: "Episode 3 Winner",
-    subtitle: "OPENS IN ROME",
+    subtitle: "SOUNDCHECK\u00A0ACCESS",
   },
   {
     label: "Episode 4 Winner",
-    subtitle: "OPENS IN LONDON",
+    subtitle: "CREATIVE\u00A0SESSION",
   },
   {
     label: "Episode 5 Winner",
-    subtitle: "OPENS IN PARIS",
+    subtitle: "TOUR\u00A0LIFE",
   },
   {
     label: "Episode 6 Winner",
-    subtitle: "OPENS IN BERLIN",
+    subtitle: "FAN\u00A0EVENT",
   },
   {
     label: "Episode 7 Winner",
-    subtitle: "OPENS IN BARCELONA",
+    subtitle: "BACKING\u00A0VOCALIST",
   },
 ];
 
@@ -160,6 +162,8 @@ export default function MadridResultPage() {
           </article>
         </div>
 
+        <p className="madrid-result-prizes-heading">EPISODE WINNER PRIZES</p>
+
         <div className="madrid-result-finals-board">
           <article className="madrid-finalist-card madrid-finalist-card-winner">
             <p className="madrid-finalist-label">EPISODE 2 WINNER</p>
@@ -177,7 +181,7 @@ export default function MadridResultPage() {
               )}
             </div>
             <p className="madrid-finalist-name">
-              {mounted && winner ? "OPENS IN MADRID" : "\u00A0"}
+              {mounted && winner ? episodeTwoReward : "\u00A0"}
             </p>
           </article>
 
@@ -213,13 +217,24 @@ export default function MadridResultPage() {
           })}
         </div>
 
-        <NextSlideButton
-          fixed={false}
-          className="madrid-result-page-button"
-          onClick={handleContinue}
-        >
-          {finalistsUnlocked ? "CONTINUE TO PHASE THREE" : "CONTINUE"}
-        </NextSlideButton>
+        <div className="madrid-result-copy-wrap">
+          <p className="madrid-result-copy">
+            Each city winner qualifies for the next round and wins
+            exclusive access to Sabrina&apos;s world.
+          </p>
+          <p className="madrid-result-copy">
+            The Local challenger wins joining the other competitors and sending one home.          </p>
+        </div>
+
+        <div className="slide-action-wrap">
+          <NextSlideButton
+            fixed={false}
+            className="madrid-result-page-button"
+            onClick={handleContinue}
+          >
+            {finalistsUnlocked ? "CONTINUE TO PHASE THREE" : "CONTINUE"}
+          </NextSlideButton>
+        </div>
       </section>
     </SlideBackground>
   );

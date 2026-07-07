@@ -69,14 +69,15 @@ export default function PhaseThreePage() {
         <div className="phase-three-copy-panel">
           <div className="phase-copy phase-description-panel">
             <p>
-              In Phase Three, the qualifying six artists are split into two
+              Phase Three, the qualifying six artists are split into two
               groups of three, each competing in their own semi-final.
             </p>
             <p>
-              This time, they all perform in the stadium before Sabrina. From each group,
-              Sabrina&apos;s team selects one artist to advance, setting up a
-              final stadium showdown where Sabrina chooses the artist who
-              will become her official opening act.
+              This time, they all perform in front of Sabrina and her team. From
+              each group, one artist advances to the
+              final and receives a makeover from Sabrina&apos;s team. A
+              final stadium showdown awaits them where the ultimate reward is becoming Sabrina&apos;s
+              official opening act.
             </p>
           </div>
         </div>
@@ -108,7 +109,9 @@ export default function PhaseThreePage() {
                         className="phase-three-card-image"
                       />
                       {mounted && isWinner ? (
-                        <span className="phase-three-card-badge">FINALIST</span>
+                        <span className="phase-three-card-badge">
+                          {"SABRINA\u00A0MAKEOVER"}
+                        </span>
                       ) : null}
                     </div>
                   </article>
@@ -143,7 +146,9 @@ export default function PhaseThreePage() {
                         className="phase-three-card-image"
                       />
                       {mounted && isWinner ? (
-                        <span className="phase-three-card-badge">FINALIST</span>
+                        <span className="phase-three-card-badge">
+                          {"SABRINA\u00A0MAKEOVER"}
+                        </span>
                       ) : null}
                     </div>
                   </article>
@@ -153,13 +158,15 @@ export default function PhaseThreePage() {
           </section>
         </div>
 
-        <NextSlideButton
-          fixed={false}
-          className="phase-three-button"
-          onClick={handleContinue}
-        >
-          {step >= 2 ? "CONTINUE TO FINAL" : "CONTINUE"}
-        </NextSlideButton>
+        <div className="slide-action-wrap">
+          <NextSlideButton
+            fixed={false}
+            className="phase-three-button"
+            onClick={handleContinue}
+          >
+            {step >= 2 ? "CONTINUE TO FINAL" : "CONTINUE"}
+          </NextSlideButton>
+        </div>
       </section>
     </SlideBackground>
   );

@@ -60,9 +60,10 @@ export default function SummaryPage() {
               lifetime, becoming Sabrina Carpenter&apos;s official opening act.
               Across international cities, contestants face performance
               challenges inspired by each location, battle local challengers,
-              survive eliminations, and compete in stadium semi-finals before a
-              final showdown. The winner earns the chance to remain on tour with
-              Sabrina and perform in front of audiences around the world.
+              and unlock escalating access to Sabrina&apos;s world through each
+              round. The journey builds from city prizes to stadium semi-finals
+              and ends in a final showdown where the winner becomes Sabrina
+              Carpenter&apos;s official opening act.
             </p>
             <Link href="/" className="next-slide-button next-slide-button-inline winner-reveal-button">
               <span>BACK HOME</span>

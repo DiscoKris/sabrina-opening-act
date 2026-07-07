@@ -36,13 +36,13 @@ export default function PhaseOnePage() {
             <div className="phase-one-copy-panel">
               <div className="phase-copy phase-description-panel">
                 <p>
-                  Sabrina and her team have put out a global casting call and
-                  from thousands of applicants, the top several hundred hopefuls
-                  turn up to an arena for a mass audition.
+                  Sabrina and her team have announced a global casting call and
+                  from thousands of applicants, only the top tier are invited
+                  to audition.
                 </p>
                 <p>
-                  Only 10 are selected to go global and try and cement
-                  themselves as the next great global pop sensation.
+                  From there, 10 are selected to travel and compete to
+                  become the next great global pop sensation.
                 </p>
               </div>
             </div>
